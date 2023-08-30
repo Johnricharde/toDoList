@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- <input type="date"/> -->
+    <ol>
+        <li>
+            Legg til person. Må kunne angis når man lager ny oppgave og må
+            kunne redigeres
+        </li>
+        <li>Legg til kolonne for frist. Bruk input-tag med type="date".
+            Konvertering til visningsformat: <tt>new Date("2019-02-13").toLocaleDateString()</tt>
+        </li>
+        <li>Lag kolonne for "gjort dato" som fylles ut automatisk når man 
+            trykker på checkboxen for at det er gjort.</li>
+    </ol>
+
+    <table id="tasksTable"></table>
+    <p>
+        <input placeholder="Oppgaven..." id="taskDescription" type="text"/><br>
+        <input placeholder="Personen..." id="taskPerson" type="text"/><br>
+        <input id="taskDate" type="date"/><br>
+        <button onclick="addTask()">Legg til oppgave</button>
+    </p>
+
+    <script src="index.js"></script>
+</body>
+</html>

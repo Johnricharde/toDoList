@@ -1,0 +1,18 @@
+table, tr, td, th {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 4px;
+}
+
+th {
+    background-color: darkblue;
+    border: 1px solid darkblue;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: antiquewhite;
+}
